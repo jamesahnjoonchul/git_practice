@@ -1,0 +1,106 @@
+﻿<!--HTML Tables, HTML tags, CSS selectors, common CSS properties--> 
+<!DOCType html>
+<html>
+
+<head>
+  <link href="./styles.css" type="text/css" rel="stylesheet">
+  <title>James Ahn Cheatsheet</title>
+</head>
+  
+<body>
+  <div class="basics1">
+    <h1>HTML Basics</h1>
+    <p>HTML stands for Hyper Text Markup Language</p>
+    <ul>
+      <li>Most HTML elements contain opening and closing tags with raw text or other HTML tags between them</li>
+      <li>HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.</li>
+      <li>Any visible content should be placed within the opening and closing &ltbody&gt tags</li>
+      <li>Headings and sub-headings, h1 to h6 tags, are used to enlarge text. p, span and div tags specify text or blocks. The em and strong tags are used to emphasize text. 
+Line breaks are created with the br tag. 
+</li>
+    </ul>
+    
+  </div>
+ 
+  <div class="basics2">
+    <ul>
+      <li>Don't forget to use !DOCType html to specify that it is a HTML file</li>
+      <li>open and close with &lthtml&gt</li>
+      <li>you can link HTML file to other linkes thorugh a <em>anchor</em>. Use <strong>href</strong> to copy link. You can also wrap img with a element to make img a link</li>
+      <li>use id= to link to a target</li>
+    </ul>  
+  </div>
+  
+  <div>
+    <h2>How to use tables</h2>
+    <table id="table" style="overflow-x:auto;">
+      <thead>
+      <tr>
+        <th>Notation</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&lt table &gt</td>
+      <td>"table, always start with this"</td>
+      </tr>
+      <tr>
+        <td>&lt thead &gt</td>
+      <td>"table head, section off table head"</td>
+      </tr>
+      <tr>
+        <td>&lt tbody &gt</td>
+      <td>"table body, section off table body"</td>
+      </tr>
+      <tr>
+        <td>&lt tr &gt</td>
+      <td>"table row, create a new row"</td>
+      </tr>
+      <tr>
+        <td>&lt td &gt</td>
+      <td>"table data, insert table data"</td>
+      </tr>
+      <tr>
+        <td>&lt tfoot &gt</td>
+      <td>"table footer, section off table foor for final calculation or summary"</td>
+      </tr>  
+      </tbody>
+    </table>
+  </div>
+  
+  <div>
+    <h2> How to use style and use CSS</h2>
+    <p style="color: red; font-size: 20px">You can use in-line styling, syntax is &ltp style="color: red; font-size: 20px" &gt</p>
+    <br>
+    <p>But you can write CSS code within HTML </p>
+    <table id="CSS" style="overflow-x:auto;">
+      <thead>
+        <tr>
+          <th>Notation</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&ltstyle&gt</td>
+          <td>Must be placed within &lthead&gt section, write CSS code here</td>
+        </tr>
+        <tr>
+          <td>&ltlink&gt</td>
+          <td>Must be placed within &lthead&gt section, used to link to separate CSS file. Must include href, type (="text/css"), rel (="stylesheet")</td>
+        </tr>
+      </tbody>    
+    </table>
+  <br>
+    <h3>Using CSS</h3>
+  <ul>
+    <li>Use a tag name to select elements eg p for paragraph</li>
+    <li>a period (.) must be prepended to the class’s name </li>
+    <li>To select an id element, CSS prepends the id name with a hashtag (#)</li>
+    <li>combining multiple selectors, which we will refer to as chaining. For instance, if there was a .special class for h1 elements</li>
+    <li>or remove repetition by adding a comma</li>
+  </ul>
+    </div>
+</body>
+</html>
